@@ -1,0 +1,22 @@
+.f
+    &-box
+        border-width: 1px
+        border-style: solid
+        border-color: map-get($colors, gray)
+        margin-bottom: $gutter*1.5
+        border-radius: $border-radius
+        display: flex
+        align-items: center
+        padding: 0 $border-radius
+        transition: .5s background-color, .2s box-shadow
+        position: relative
+
+        &.disabled
+            border-color: map-get($colors, gray)
+            background-color: map-get($colors, light)
+
+        &:focus-within
+            box-shadow: 0 0 1pt 1pt map-get($colors, gray)
+
+        &.error
+            background-color: map-get($colors, gored-light)

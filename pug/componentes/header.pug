@@ -1,0 +1,24 @@
+header.header
+        .header__logo.background-color-gored.py-2.pr-2
+            img(src="images/logo-gowikend.svg")
+        .header__createpanorama.background-color-light
+            .container-admin.wrapper.area.j-sb.py-3
+                div
+                    h1 Panoramas
+                    p Crea, elimina y edita panoramas
+                div
+                    button(type='button').btn.font-size-s.background-color-gored.py-2 Crear panorama
+            section.wrapper
+                form(action="" method="POST").search.background-color-white.flex.ai-c
+                    .search__select.mx-2
+                        select(name="select").search__select--style
+                            option(value="value1") Filtrar por
+                            option(value="value2") Value 2
+                            option(value="value3") Value 3
+                    span.line
+                    .search__filter-button
+                        input.search__filter-button--input(type="search" name="busquedad" placeholder="Buscar por nombre, categoría, etc...")
+                        button(type="submit" value="Send Request").btn-search
+                            img(src="images/search.svg")
+
+            
