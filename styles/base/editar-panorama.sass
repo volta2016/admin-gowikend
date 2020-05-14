@@ -1,0 +1,40 @@
+.up-img 
+    width: 100%
+    height: 157px
+    border: #AAAAAA 5px dashed
+    display: flex
+    justify-content: center
+    align-items: center
+
+//imagenes para portadas
+.contimg-port
+    width: 100%
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    &__switch
+        border-radius: 20px
+        padding: .2rem
+        width: 112px
+        height: 112px
+    &__switch:hover
+        border: 3px solid #AAAAAA
+.switch__content
+    position: relative
+.switch__content i
+    visibility: hidden
+    height: 32px
+    width: 32px
+    position: absolute
+    right: 5
+    top: 5 
+
+//botón 
+.btn-new-e
+    width: auto
+    padding: 0.7rem 2rem
+    color: map-get($colors, gored)!important
+    @include btnconfig
+
+.block
+    display: none
