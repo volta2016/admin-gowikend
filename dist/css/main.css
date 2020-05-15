@@ -1502,6 +1502,80 @@ th {
     .card-habitacion__edit i img {
       height: 22px; }
 
+.mt2h {
+  height: 40px;
+  width: 80% !important;
+  border: 1px solid #ccc;
+  width: 95%;
+  font-size: 0.882rem;
+  border-right: 0 !important; }
+
+.price-cpl {
+  height: 40px;
+  width: 70% !important;
+  border: 1px solid #ccc;
+  width: 95%;
+  font-size: 0.882rem;
+  border-right: 0 !important;
+  border-left: 0 !important; }
+
+.price {
+  height: 40px;
+  width: 10%;
+  padding: .5rem;
+  line-height: 1.7rem; }
+
+.unidad {
+  height: 40px;
+  width: 20%;
+  padding: .5rem;
+  line-height: 1.7rem; }
+
+.contain-detailsprice__box1 {
+  width: 40%; }
+
+.contain-detailsprice__box2 {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.days-disp__dateoption {
+  height: 292px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+
+.days-disp__dateoption span {
+  font-size: 12px; }
+
+.days-disp__dateoption h2 {
+  margin-bottom: 0.2rem !important; }
+
+.searchreset {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end; }
+  .searchreset__reset {
+    color: #EE220C;
+    font-size: 12px; }
+  .searchreset__dateoption {
+    font-size: 12px;
+    color: #00AD9E; }
+
 .contain-place__region {
   width: 45%; }
 
