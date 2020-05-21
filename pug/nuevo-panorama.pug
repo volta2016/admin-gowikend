@@ -8,34 +8,7 @@ block contenido
             h2 Descripción de la experiencia
             textarea.panorama__element--input2.px-2.py-2.mb-3(id="reseña panoramas" placeholder="Siente la brisa de la cordillera cuando despierte en tu desayuno, estando al lado de la naturaleza")
             h2 Servicios incluídos
-            .container-service.area.j-sb.wrapper.mb-3
-                button.container-service__btnservice.mb-1
-                    img(src="images/cafe1.svg") 
-                    |  Servicio 1
-                button.container-service__btnservice.mb-1
-                    img(src="images/cafe1.svg") 
-                    |  Servicio 2
-                button.container-service__btnservice.mb-1
-                    img(src="images/cafe1.svg") 
-                    |  Servicio 3
-                button.container-service__btnservice.mb-1
-                    img(src="images/cafe1.svg") 
-                    |  Servicio 4
-                button.container-service__btnservice.mb-1
-                    img(src="images/cafe1.svg") 
-                    |  Servicio 5
-                button.container-service__btnservice.mb-1
-                    img(src="images/cafe1.svg") 
-                    |  Servicio 6
-                button.container-service__btnservice.mb-1
-                    img(src="images/cafe1.svg") 
-                    |  Servicio 7
-                button.container-service__btnservice.mb-1
-                    img(src="images/cafe1.svg") 
-                    |  Servicio 8
-                button.container-service__btnservice.mb-1
-                    img(src="images/cafe1.svg") 
-                    |  Servicio 9
+            include ./componentes/service-button.pug
             
             h2 URL Amigable
             article.url.area.mb-5
@@ -49,5 +22,5 @@ block contenido
                 div
                     butoon.btn.font-size-s.background-color-gored.px-2 Siguiente paso
         
-        include ./componentes/card-lista.pug
+        include ./componentes/card-list.pug
         

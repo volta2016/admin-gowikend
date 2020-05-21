@@ -1,0 +1,66 @@
+extend componentes/template-3.pug
+block contenido
+    section.background-color-light
+        div.container-nuevop.wrapper.wrapper.area.j-sb
+            .container-nuevop__crearexp.px-3.pt-4.pb-5.background-color-white
+                h2.mb-2 Subir fotografías
+                .up-img.mb-4 
+                    img(src="images/upload-images.svg")
+                h2 Descripción de la experiencia
+                p.font-size-xs La imagen seleccionada es la portada
+                section.contimg-port
+                    article.contimg-port__switch.mr-1.mb-2
+                        div(onclick="changeIcon('visible')").switch__content
+                            i#cambio 
+                                img(src="images/eliminar.svg")
+                            img( src="images/foto-1.png")
+                    article.contimg-port__switch.mx-1.mb-2
+                        div(onclick="changeIcon2('visible')").switch__content
+                            i#cambio2 
+                                img(src="images/eliminar.svg")
+                            img(src="images/foto-2.png")
+                    article.contimg-port__switch
+                        div(onclick="changeIcon3('visible')").switch__content
+                            i#cambio3  
+                                img(src="images/eliminar.svg")
+                            img(src="images/foto-1.png")
+                    article.contimg-port__switch.mx-1.mb-2
+                        div(onclick="changeIcon4('visible')").switch__content
+                            i#cambio4  
+                                img(src="images/eliminar.svg")
+                            img(src="images/foto-2.png")
+                    article.contimg-port__switch.ml-1.mb-2
+                        div(onclick="changeIcon5('visible')").switch__content
+                            i#cambio5  
+                                img(src="images/eliminar.svg")
+                            img(src="images/foto-1.png")
+                    article.contimg-port__switch.mb-2
+                        div.switch__content
+                            i#cambio  
+                                img(src="images/eliminar.svg")
+                            img(src="images/error-formato.png")
+                    
+                        
+                        
+
+            aside.container-nuevop__listexp.px-3.pt-4.pb-5.background-color-white
+                h2.mb-2 Lista de pasos a seguir
+                div.container-aco
+                    button(type="button").acordion
+                        h2 Paso 1: Información publicitaria
+                    .panel
+                        p.font-size-xs Las fotografías atraen a tu cliente, intenta que todos tus panoramas tengas imagenes llamativas y bien descriptivas.
+                div.container-aco
+                    button(type="button").acordion
+                        h2 Paso 2: Detalles
+                    .panel
+                        p.font-size-xs Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                div.container-aco
+                    button(type="button").acordion
+                        h2 Paso 3: Lugar y ubicación
+                    .panel
+                        p.font-size-xs Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                
+                article.area.j-sb.mt-4
+                    butoon.btn-new-e.font-size-s.background-color-light Eliminar
+                    butoon.btn-new-p.font-size-s.background-color-godark Siguiente

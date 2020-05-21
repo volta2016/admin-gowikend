@@ -7,11 +7,8 @@
     align-items: center
 
 //imagenes para portadas
-.contimg-port
+.contcoverpage
     width: 100%
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
     &__switch
         border-radius: 20px
         padding: .2rem
@@ -19,8 +16,10 @@
         height: 112px
     &__switch:hover
         border: 3px solid #AAAAAA
+    
 .switch__content
     position: relative
+    height: 108px
 .switch__content i
     visibility: hidden
     height: 32px
@@ -30,11 +29,8 @@
     top: 5 
 
 //botón 
-.btn-new-e
-    width: auto
-    padding: 0.7rem 2rem
-    color: map-get($colors, gored)!important
-    @include btnconfig
-
 .block
     display: none
+
+.c-red
+	color: map-get($colors,	gored)
