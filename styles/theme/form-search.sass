@@ -1,0 +1,37 @@
+//search
+.search
+    height: 55px
+    border-radius: 50px
+
+    &__filter-button
+        width: 100%
+        &--input
+            width: 90%
+            height: 30px
+            font-size: 16px
+            border: none
+    &__select
+        width: 186px
+        position: relative
+        &--search 
+            @include btn-table
+            width: 100%
+            background-color: transparent        
+    &__btn
+        background: none
+        border: 0
+        box-sizing: border-box 
+        vertical-align: bottom
+
+
+//select personalizado
+.search__select select
+    appearance: none
+.search__select select::-ms-expand
+    display: none
+
+span.line
+    height: 100%
+    width: 2px
+    margin-right: 1rem
+    background-color: map-get($colors, godark-75)

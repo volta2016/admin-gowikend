@@ -1,66 +1,53 @@
-extend componentes/template-2.pug
+extend componentes/template.pug
 block contenido
-    section.background-color-light
-        div.container-nuevop.wrapper.wrapper.area.j-sb
-            .container-nuevop__crearexp.px-3.pt-4.pb-5.background-color-white
-                h2 Título de la experiencia
-                input.container-nuevop__crearexp--input.pl-2.mb-3(type="search" name="busquedad" placeholder="Disfruta de una experiencia única")
-                h2 Descripción de la experiencia
-                textarea.container-nuevop__crearexp--input2.px-2.py-2.mb-3(id="reseña panoramas" placeholder="Siente la brisa de la cordillera cuando despierte en tu desayuno, estando al lado de la naturaleza")
-                //- input(type="search" name="busquedad" placeholder="Disfruta de una experiencia única")
-                h2 Servicios incluídos
-                .container-service.j-sb.mb-3
-                    button.container-service__btn-s.btn-s--img.mb-1 
-                        |  Servicio 1
-                    button.container-service__btn-s.btn-s--img-a.mb-1 
-                        |  Servicio 2
-                    button.container-service__btn-s.btn-s--img-b.mb-1 
-                        |  Servicio 3
-                    button.container-service__btn-s.btn-s--img-c.mb-1 
-                        |  Servicio 4
-                    button.container-service__btn-s.btn-s--img-d.mb-1 
-                        |  Servicio 5
-                    button.container-service__btn-s.btn-s--img-e.mb-1 
-                        |  Servicio 6
-                    button.container-service__btn-s.btn-s--img-f.mb-1 
-                        |  Servicio 7
-                    button.container-service__btn-s.btn-s--img-g.mb-1 
-                        |  Servicio 8
-                    button.container-service__btn-s.btn-s--img-h.mb-1 
-                        |  Servicio 9
-                    
-                h2 URL Amigable
-                article.area.mb-5
-                    section.box-6
-                        div.url.background-color-light.p-1  https://gowikend.cl/panorama/
-                    section.box-6
-                        input.container-nuevop__crearexp--input3.pl-2(type="search" name="urlamigable" placeholder="vacaciones-geniales")
-                article.next.area.j-sb
-                    div
-                        h2.font-size-m Paso 1 de 3
-                    div
-                        butoon.btn-new-p.font-size-s.background-color-gored Siguiente paso
-                        
-                        
-
-            aside.container-nuevop__listexp.px-3.pt-4.pb-5.background-color-white
-                h2.mb-2 Lista de pasos a seguir
-                div.container-aco
-                    button(type="button").acordion
-                        h2 Paso 1: Información publicitaria
-                    .panel
-                        p.font-size-xs Las fotografías atraen a tu cliente, intenta que todos tus panoramas tengas imagenes llamativas y bien descriptivas.
-                div.container-aco
-                    button(type="button").acordion
-                        h2 Paso 2: Detalles
-                    .panel
-                        p.font-size-xs Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                div.container-aco
-                    button(type="button").acordion
-                        h2 Paso 3: Lugar y ubicación
-                    .panel
-                        p.font-size-xs Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
-                
-                article.area.j-sb.mt-4
-                    butoon.btn-new-p.font-size-s.background-color-grey Anterior
-                    butoon.btn-new-p.font-size-s.background-color-godark Siguiente
+    include ./componentes/header-title.pug
+    .area.wrapper.j-sb
+        article.panorama.box-6.br.background-color-white.px-4.py-4
+            h2 Título de la experiencia
+            input.panorama__element--input.pl-2.mb-3(type="search" name="busquedad" placeholder="Disfruta de una experiencia única")
+            h2 Descripción de la experiencia
+            textarea.panorama__element--input2.px-2.py-2.mb-3(id="reseña panoramas" placeholder="Siente la brisa de la cordillera cuando despierte en tu desayuno, estando al lado de la naturaleza")
+            h2 Servicios incluídos
+            .container-service.area.j-sb.wrapper.mb-3
+                button.container-service__btnservice.mb-1
+                    img(src="images/cafe1.svg") 
+                    |  Servicio 1
+                button.container-service__btnservice.mb-1
+                    img(src="images/cafe1.svg") 
+                    |  Servicio 2
+                button.container-service__btnservice.mb-1
+                    img(src="images/cafe1.svg") 
+                    |  Servicio 3
+                button.container-service__btnservice.mb-1
+                    img(src="images/cafe1.svg") 
+                    |  Servicio 4
+                button.container-service__btnservice.mb-1
+                    img(src="images/cafe1.svg") 
+                    |  Servicio 5
+                button.container-service__btnservice.mb-1
+                    img(src="images/cafe1.svg") 
+                    |  Servicio 6
+                button.container-service__btnservice.mb-1
+                    img(src="images/cafe1.svg") 
+                    |  Servicio 7
+                button.container-service__btnservice.mb-1
+                    img(src="images/cafe1.svg") 
+                    |  Servicio 8
+                button.container-service__btnservice.mb-1
+                    img(src="images/cafe1.svg") 
+                    |  Servicio 9
+            
+            h2 URL Amigable
+            article.url.area.mb-5
+                section.box-6
+                    div.url__primary.background-color-light.p-1.pl-2 https://gowikend.cl/panorama/
+                section.box-6
+                    input.url__secudary--input3.pl-2
+            articcle.next.area.j-sb
+                div
+                    h2.font-size-m Paso 1 de 3
+                div
+                    butoon.btn.font-size-s.background-color-gored.px-2 Siguiente paso
+        
+        include ./componentes/card-lista.pug
+        

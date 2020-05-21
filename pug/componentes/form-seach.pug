@@ -1,0 +1,12 @@
+section.wrapper
+            form(action="" method="POST").search.background-color-white.flex.ai-c
+                .search__select.mx-2
+                    select(name="select").search__select--search
+                        option(value="value1") Filtrar por
+                        option(value="value2") Value 2
+                        option(value="value3") Value 3
+                span.line
+                .search__filter-button
+                    input.search__filter-button--input(type="search" name="busquedad" placeholder="Buscar por nombre, categoría, etc...")
+                    button(type="submit" value="Send Request").search__btn
+                        img(src="images/search.svg")

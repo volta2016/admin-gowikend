@@ -1,16 +1,16 @@
-.actividades
+.activity
     height: 40px
     width: 100%
     border: 1px solid #ccc
     display: flex
     justify-content: space-between
     position: relative
-    &__element-a
+    &__text
         width: 92%
-    &__element-a p
+    &__text p
         line-height: 22px
         margin: 0!important
-    &__element-b
+    &__icon
         cursor: pointer
         width: 42px
         display: flex
@@ -21,22 +21,22 @@
         top: -1px
         height: 40px
 
-
-.seleccategory
+   
+.selectcategory
     border: 1px solid #ccc
     height: 248px
     width: 100%
     overflow: scroll
-    &__elementbox
+    &__categorybox
         cursor: pointer
         width: 100%
         height: 40px
         background-color: trasparent
         color: map-get($colors, godark) 
-    &__elementbox:hover
+    &__categorybox:hover
         background-color: map-get($colors, gogreen)
         color: map-get($colors, white) 
-    &__elementbox p
+    &__categorybox p
         margin: 0!important
         line-height: 25px
 

@@ -7,6 +7,11 @@
 .flex
     display: flex
 
+.title-th
+    font-weight: bold
+    font-size: $s
+    color: map-get($colors, gogreen)
+
 @mixin boxs($i)
     flex: 0 0 8.33333333333%*$i
     max-width: 8.33333333333%*$i
@@ -81,23 +86,5 @@
 //grid admin
 
 // 212px
-.container-grid 
-    display: grid
-    grid-template: 46px auto 1fr 86px / 60px 1fr
-    height: 100vh
-    grid-template-areas: "nav header" "nav header" "nav table" "nav footer"
-    // @media screen and(max-width: $max-width)    
-
-.nav
-    grid-area: nav                         
-
-.header
-    grid-area: header
-
-.table
-    grid-area: table
-
-.footer
-    grid-area: footer
 
 

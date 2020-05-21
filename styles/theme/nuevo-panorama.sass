@@ -1,0 +1,75 @@
+//Subir fotografías
+.panorama
+
+		&__element       
+			&--input
+				height: 40px
+				@include i-panorama
+			&--input2
+				height: 120px
+				@include i-panorama
+			
+
+   
+
+.container-service
+		&__btnservice
+			width: 113px
+			height: 32px
+			font-size: $xs
+			background-size: 20px!important
+			border-radius: 50px
+			background-color:#F4FAF9
+			border: 0
+		&__btnservice img
+			height: 16px
+			vertical-align: bottom
+		&__btnservice:hover
+			background-color: map-get($colors, gogreen)
+			
+// URL amigable
+.url
+	&__primary
+		height: 40px
+		font-size: $xs
+		line-height: 25px
+	&__secudary--input3
+		height: 40px
+		border-left: 0!important
+		@include i-panorama
+
+.next
+    margin-top: 3.5rem
+
+
+//Lista de pasos a seguir - acordion 
+	
+.container-aco
+    border-bottom: 1px solid map-get($colors, light) 
+.accordion
+    text-align: left 
+    padding: 1rem 0
+    width: 100%
+    transition: .4s
+    border: 0px
+    background: url("../images/check-1.svg") no-repeat 90% center
+    cursor: pointer
+    &.active, &:hover 
+        background: url("../images/check-2.svg") no-repeat 90% center
+    & > h2
+        font-weight: 200
+.panel
+    max-height: 0
+    width: 100%
+    overflow: hidden
+    transition: max-height .2s ease-out  
+    & p 
+        font-weight: 200 
+
+//colores para botones de card lista de pasos a seguir
+.c-dark
+	color: map-get($colors,	godark-75)
+
+   
+        
+    

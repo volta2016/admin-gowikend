@@ -13,8 +13,9 @@ for(x = 0; x < myRadios.length; x++){
     };
 }
 
+
 //acordion
-let acor = document.getElementsByClassName('acordion');
+let acor = document.getElementsByClassName('accordion');
 let i;
 for(i = 0; i < acor.length; i++) {
     acor[i].onclick = function() {
@@ -29,7 +30,7 @@ for(i = 0; i < acor.length; i++) {
 }
 
 //eliminar img
-const grupo = [element,elementA,elementB,elementC,elementD]
+// const grupo = [element,elementA,elementB,elementC,elementD];
 
 function changeIcon(newDisplay) {
     let element = document.getElementById('cambio');

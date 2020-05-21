@@ -4,7 +4,9 @@ html
 	include head.pug
 	body
 		div.container-grid
-			include header.pug
+			include header.pug 
 			include nav.pug
-			block contenido
-			include footer
+			section.background-color-light.content
+				block contenido
+		script(src="js/function.js")
+				

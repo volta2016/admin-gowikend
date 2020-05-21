@@ -1,0 +1,88 @@
+extend componentes/template-2.pug
+block contenido
+    section.background-color-light
+        div.container-nuevop.wrapper.wrapper.area.j-sb
+            .container-nuevop__crearexp.px-3.pt-4.pb-5.background-color-white
+                .contain-place.area
+                    .contain-place__region.box-6
+                        h2 Región
+                        select.select-place
+                            option(value="value1") Seleccione región
+                            option(value="value2") Value 2
+                            option(value="value3") Value 3
+                    .contain-place__comuna.box-6
+                        h2 Comuna        
+                        select.select-place
+                            option(value="value1") Seleccione comuna
+                            option(value="value2") Value 2
+                            option(value="value3") Value 3
+                h2.mt-3 Nombre de la calle y número
+                input.place-valueoutput.pl-2.mb-3(type="search" name="busquedad" value="Gran Avenida N° 12932" disabled)
+                h2 Previsualización en el mapa
+                .contain-map
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4641.849992762612!2d-70.68997644606436!3d-33.57256989651538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dbdce57105cb%3A0xab4cd51ed7433c42!2sGran%20Avenida%20Jose%20Miguel%20Carrera%2012932%2C%20El%20Bosque%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses!2scl!4v1589469904170!5m2!1ses!2scl" width="100%" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                h2.mt-3  Defina rangos de horas entrada-salida
+                .contain-checkout.area.mb-2
+                    .contain-checkout__check.pt-2 
+                        span.font-size-xs Rango de horas Check-In
+                    .contain-checkout__checkselect
+                        select.contain-checkout__checkselect--select
+                            option(value="value1") 10:30
+                            option(value="value2") 11:00
+                            option(value="value3") 11:30
+                        span __
+                        select.contain-checkout__checkselect--select
+                            option(value="value1") 10:30
+                            option(value="value2") 11:00
+                            option(value="value3") 11:30
+                .contain-checkout.area
+                    .contain-checkout__check.pt-2 
+                        span.font-size-xs Rango de horas Check-In
+                    .contain-checkout__checkselect
+                        select.contain-checkout__checkselect--select
+                            option(value="value1") 10:30
+                            option(value="value2") 11:00
+                            option(value="value3") 11:30
+                        span __
+                        select.contain-checkout__checkselect--select
+                            option(value="value1") 10:30
+                            option(value="value2") 11:00
+                            option(value="value3") 11:30
+                h2.mt-3 Nombre del lugar
+                input.place-valueoutput.pl-2.mb-3(type="search" name="busquedad" value="Gran Avenida N° 12932" disabled)
+                h2 Tipo de alrededor
+                select.select-place
+                            option(value="value1") Seleccione algo de la lista
+                            option(value="value2") Value 2
+                            option(value="value3") Value 3
+    
+                
+                article.next.area.j-sb
+                    div
+                        h2.font-size-m Paso 1 de 3
+                    div
+                        butoon.btn-new-p.font-size-s.background-color-gored Siguiente paso
+                        
+                        
+
+            aside.container-nuevop__listexp.px-3.pt-4.pb-5.background-color-white
+                h2.mb-2 Lista de pasos a seguir
+                div.container-aco
+                    button(type="button").acordion
+                        h2 Paso 1: Información publicitaria
+                    .panel
+                        p.font-size-xs Las fotografías atraen a tu cliente, intenta que todos tus panoramas tengas imagenes llamativas y bien descriptivas.
+                div.container-aco
+                    button(type="button").acordion
+                        h2 Paso 2: Detalles
+                    .panel
+                        p.font-size-xs Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text
+                div.container-aco
+                    button(type="button").acordion
+                        h2 Paso 3: Lugar y ubicación
+                    .panel
+                        p.font-size-xs Esta información es la encargada de llamar la atención al cliente final. Intenta utilizar palabras claves por un mejor SEO.
+                
+                article.area.j-sb.mt-4
+                    butoon.btn-new-p.font-size-s.background-color-grey Anterior
+                    butoon.btn-new-p.font-size-s.background-color-godark Siguiente
