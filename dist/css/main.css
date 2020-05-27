@@ -1287,7 +1287,11 @@ span.line {
     width: 92%; }
   .activity__text p {
     line-height: 22px;
-    margin: 0 !important; }
+    margin: 0 !important;
+    font-size: 0.882rem; }
+    @media only screen and (max-width: 576px) {
+      .activity__text p {
+        font-size: 0.784rem; } }
   .activity__icon {
     cursor: pointer;
     width: 42px;
@@ -1321,7 +1325,11 @@ span.line {
     color: #fff; }
   .selectcategory__categorybox p {
     margin: 0 !important;
-    line-height: 25px; }
+    line-height: 25px;
+    font-size: 0.882rem; }
+    @media only screen and (max-width: 576px) {
+      .selectcategory__categorybox p {
+        font-size: 0.784rem; } }
 
 .create-roms i {
   height: 16px; }
@@ -1412,7 +1420,8 @@ span.line {
   justify-content: flex-end;
   -webkit-box-align: end;
   -ms-flex-align: end;
-  align-items: flex-end; }
+  align-items: flex-end;
+  cursor: pointer; }
   .searchreset__reset {
     color: #EE220C;
     font-size: 12px; }
@@ -1428,6 +1437,9 @@ span.line {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding-left: 5%; }
+  @media only screen and (max-width: 576px) {
+    .containplace__boxb {
+      padding-left: 0; } }
 
 .containplace--selectvalue {
   width: 100%;
