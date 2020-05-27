@@ -97,6 +97,8 @@ input[type=number] {
 textarea {
   resize: none; }
 
+/* Media Queries Mixin
+**********************/
 .area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -974,7 +976,8 @@ textarea {
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  cursor: pointer; }
 
 .max-t {
   max-width: 384px; }
@@ -1177,7 +1180,7 @@ span.line {
 
 .url__primary {
   height: 40px;
-  font-size: 0.882rem;
+  font-size: 12px;
   line-height: 25px; }
 
 .url__secudary--input3 {
@@ -1186,6 +1189,9 @@ span.line {
   border: 1px solid #ccc;
   width: 100%;
   font-size: 0.882rem; }
+  @media only screen and (max-width: 576px) {
+    .url__secudary--input3 {
+      border-left: 1px solid #ccc !important; } }
 
 .next {
   margin-top: 3.5rem; }
@@ -1201,12 +1207,15 @@ span.line {
   -o-transition: .4s;
   transition: .4s;
   border: 0px;
-  background: url("../images/check-1.svg") no-repeat 90% center;
+  background: url("../images/check-1.svg") no-repeat 100% center;
   cursor: pointer; }
   .accordion.active, .accordion:hover {
-    background: url("../images/check-2.svg") no-repeat 90% center; }
+    background: url("../images/check-2.svg") no-repeat 100% center; }
   .accordion > h2 {
     font-weight: 200; }
+    @media only screen and (max-width: 576px) {
+      .accordion > h2 {
+        font-size: 12px; } }
 
 .panel {
   max-height: 0;
@@ -1323,14 +1332,15 @@ span.line {
 .cardroms {
   border-radius: 15px;
   background-color: #F4FAF9;
-  height: 77px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 1rem; }
+  padding: 1rem;
+  font-size: 0.784rem; }
   .cardroms__data i {
     vertical-align: bottom; }
   .cardroms__edit {
@@ -1341,6 +1351,7 @@ span.line {
     -ms-flex-pack: end;
     justify-content: flex-end; }
     .cardroms__edit i img {
+      cursor: pointer;
       height: 22px;
       min-width: 22px; }
 

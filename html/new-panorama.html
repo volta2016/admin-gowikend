@@ -34,37 +34,46 @@
           </div>
         </div>
         <div class="area wrapper j-sb">
-          <article class="box-6 br background-color-white px-4 py-4">
-            <h2 class="mb-2">Subir fotografías</h2>
-            <div class="up-img mb-4"> <img src="images/upload-images.svg"/></div>
+          <article class="panorama box-6 br background-color-white px-4 py-4">
+            <h2>Título de la experiencia</h2>
+            <input class="panorama__element--input pl-2 mb-3" type="search" name="busquedad" placeholder="Disfruta de una experiencia única"/>
             <h2>Descripción de la experiencia</h2>
-            <p class="font-size-xs">La imagen seleccionada es la portada</p>
-            <section class="contcoverpage area j-sb">
-              <article class="contcoverpage__switch mb-2">
-                <div class="switch__content" onclick="changeIcon('visible')"><i id="cambio"> <img src="images/eliminar.svg"/></i><img src="images/foto-1.png"/></div>
-              </article>
-              <article class="contcoverpage__switch mb-2">
-                <div class="switch__content" onclick="changeIcon2('visible')"><i id="cambio2"> <img src="images/eliminar.svg"/></i><img src="images/foto-2.png"/></div>
-              </article>
-              <article class="contcoverpage__switch">
-                <div class="switch__content" onclick="changeIcon3('visible')"><i id="cambio3"> <img src="images/eliminar.svg"/></i><img src="images/foto-1.png"/></div>
-              </article>
-              <article class="contcoverpage__switch mb-2">
-                <div class="switch__content" onclick="changeIcon4('visible')"><i id="cambio4"> <img src="images/eliminar.svg"/></i><img src="images/foto-2.png"/></div>
-              </article>
-              <article class="contcoverpage__switch mb-2">
-                <div class="switch__content" onclick="changeIcon5('visible')"><i id="cambio5"> <img src="images/eliminar.svg"/></i><img src="images/foto-1.png"/></div>
-              </article>
-              <article class="contcoverpage__switch mb-2">
-                <div class="switch__content"><i id="cambio"> <img src="images/eliminar.svg"/></i><img src="images/error-formato.png"/></div>
-              </article>
-            </section>
+            <textarea class="panorama__element--input2 px-2 py-2 mb-3" id="reseña panoramas" placeholder="Siente la brisa de la cordillera cuando despierte en tu desayuno, estando al lado de la naturaleza"></textarea>
+            <h2>Servicios incluídos</h2>
+            <div class="container-service area j-sb wrapper mb-3">
+              <button class="container-service__btnservice mb-1"><img src="images/cafe1.svg"/> Servicio 1</button>
+              <button class="container-service__btnservice mb-1"><img src="images/cama-doble-1.svg"/> Servicio 2</button>
+              <button class="container-service__btnservice mb-1"><img src="images/cama-individual-1.svg"/> Servicio 3</button>
+              <button class="container-service__btnservice mb-1"><img src="images/cocina-1.svg"/> Servicio 4</button>
+              <button class="container-service__btnservice mb-1"><img src="images/ducha-1.svg"/> Servicio 5</button>
+              <button class="container-service__btnservice mb-1"><img src="images/recepcion-1.svg"/> Servicio 6</button>
+              <button class="container-service__btnservice mb-1"><img src="images/tv-1.svg"/> Servicio 7</button>
+              <button class="container-service__btnservice mb-1"><img src="images/wifi-1.svg"/> Servicio 8</button>
+              <button class="container-service__btnservice mb-1"><img src="images/24hrs-1.svg"/> Servicio 9</button>
+            </div>
+            <h2>URL Amigable</h2>
+            <article class="url area mb-5">
+              <section class="box-6">
+                <div class="url__primary background-color-light p-1 pl-2">https://gowikend.cl/panorama/</div>
+              </section>
+              <section class="box-6">
+                <input class="url__secudary--input3 pl-2"/>
+              </section>
+            </article>
+            <articcle class="next area j-sb">
+              <div>
+                <h2 class="font-size-m">Paso 1 de 3</h2>
+              </div>
+              <div>
+                <butoon class="btn font-size-s background-color-gored px-2">Siguiente paso</butoon>
+              </div>
+            </articcle>
           </article>
           <asidecontainlist class="box-4 br px-4 pt-4 pb-5 background-color-white">
-            <h2 class="mb-2">Opciones editables</h2>
+            <h2 class="mb-2">Lista de pasos a seguir</h2>
             <div class="container-aco">
               <button class="accordion" type="button">
-                <h2>Fotografías</h2>
+                <h2>Paso 1: Información publicitaria</h2>
               </button>
               <div class="panel">
                 <p class="font-size-xs">Las fotografías atraen a tu cliente, intenta que todos tus panoramas tengas imagenes llamativas y bien descriptivas. </p>
@@ -72,7 +81,7 @@
             </div>
             <div class="container-aco">
               <button class="accordion" type="button">
-                <h2>Habitaciones</h2>
+                <h2>Paso 2: Detalles</h2>
               </button>
               <div class="panel">
                 <p class="font-size-xs">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
@@ -80,14 +89,14 @@
             </div>
             <div class="container-aco">
               <button class="accordion" type="button">
-                <h2>Detalle panorama</h2>
+                <h2>Paso 3: Lugar y ubicación</h2>
               </button>
               <div class="panel">
                 <p class="font-size-xs">Simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
               </div>
             </div>
             <article class="area j-sb mt-4">
-              <butoon class="btn c-red font-size-s background-color-light px-3">Anterior</butoon>
+              <butoon class="btn c-dark font-size-s background-color-grey px-3">Anterior</butoon>
               <butoon class="btn font-size-s background-color-godark px-3">Siguiente</butoon>
             </article>
           </asidecontainlist>

@@ -31,12 +31,15 @@
 .url
 	&__primary
 		height: 40px
-		font-size: $xs
+		font-size: 12px
 		line-height: 25px
 	&__secudary--input3
 		height: 40px
 		border-left: 0!important
 		@include i-panorama
+		@include media (mobile-sm)
+			border-left: 1px solid #ccc!important
+
 
 .next
     margin-top: 3.5rem
@@ -45,19 +48,29 @@
 //Lista de pasos a seguir - acordion 
 	
 .container-aco
-    border-bottom: 1px solid map-get($colors, light) 
+    border-bottom: 1px solid map-get($colors, light)
+
+
 .accordion
-    text-align: left 
-    padding: 1rem 0
-    width: 100%
-    transition: .4s
-    border: 0px
-    background: url("../images/check-1.svg") no-repeat 90% center
-    cursor: pointer
-    &.active, &:hover 
-        background: url("../images/check-2.svg") no-repeat 90% center
-    & > h2
-        font-weight: 200
+	text-align: left 
+	padding: 1rem 0
+	width: 100%
+	transition: .4s
+	border: 0px
+	background: url("../images/check-1.svg") no-repeat 100% center
+	cursor: pointer
+	&.active, &:hover 
+		background: url("../images/check-2.svg") no-repeat 100% center
+	& > h2
+		font-weight: 200
+		@include media (mobile-sm)
+			font-size: 12px
+
+		
+		
+	
+
+
 .panel
     max-height: 0
     width: 100%

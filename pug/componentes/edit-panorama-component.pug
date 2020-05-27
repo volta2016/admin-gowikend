@@ -1,8 +1,4 @@
-extend componentes/template.pug
-block contenido
-    include ./componentes/header-title.pug
-    .area.wrapper.j-sb
-        article.box-6.br.background-color-white.px-4.py-4
+article.box-12.box-lg-6.br.background-color-white.px-2.px-sm-4.py-4
             h2.mb-2 Subir fotografías
             .up-img.mb-4 
                 img(src="images/upload-images.svg")
@@ -39,5 +35,3 @@ block contenido
                         i#cambio  
                             img(src="images/eliminar.svg")
                         img(src="images/error-formato.png")
-
-        include ./componentes/card-list-optionedit.pug
