@@ -5,6 +5,6 @@ La aplicación de experiencia de usuario e interfaz del admin, fue creada pensan
 todos los detalles que ofrecen los distintos panoramas.
 
 ### Tecnologías 
--Pug 
--Sass
--Javascript
+- Pug
+- Sass
+- Javascript
