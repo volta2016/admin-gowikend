@@ -8,4 +8,5 @@ todos los detalles que ofrecen los distintos panoramas.
 - Pug
 - Sass
 - Javascript
-![alt text](https://repository-images.githubusercontent.com/262082463/6564fd80-a724-11ea-8355-5876fc652819)
+
+![alt text](url("https://repository-images.githubusercontent.com/262082463/80667980-c85b-11ea-96af-8ee814a01a72"))
