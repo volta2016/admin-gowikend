@@ -9,4 +9,4 @@ todos los detalles que ofrecen los distintos panoramas.
 - Sass
 - Javascript
 
-![alt text](https://repository-images.githubusercontent.com/262082463/6564fd80-a724-11ea-8355-5876fc652819)
+![alt text](https://repository-images.githubusercontent.com/262082463/0d113780-c85c-11ea-809f-049e648165dd)
