@@ -9,4 +9,6 @@ todos los detalles que ofrecen los distintos panoramas.
 - Sass
 - Javascript
 
+url https://volta2016.github.io/admin-gowikend/
+
 ![alt text](https://repository-images.githubusercontent.com/262082463/0d113780-c85c-11ea-809f-049e648165dd)
