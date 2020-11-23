@@ -4,6 +4,8 @@ El administrador de contenido cuenta con diferentes paginas, las cuales aplican 
 La aplicación de experiencia de usuario e interfaz del admin, fue creada pensando en entregar un herramienta que facilite crear contenido entregando 
 todos los detalles que ofrecen los distintos panoramas.
 
+### UI Figma
+
 ### Tecnologías 
 - Pug
 - Sass
